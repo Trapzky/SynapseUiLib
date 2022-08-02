@@ -146,7 +146,7 @@ function windows:Create(options)
     Title.Position = UDim2.new(0.010118044, 0, 0, 0)
     Title.Size = UDim2.new(0, 77, 0, 33)
     Title.Font = Enum.Font.GothamBold
-    Title.Text = title.." | "
+    Title.Text = title.."  "
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     Title.TextScaled = true
     Title.TextSize = 14.000
