@@ -13,12 +13,6 @@ function windows:Create(options)
     local github = options.GitHubLink
     local title = options.Title
     local GameName = options.Game
-    game.StarterGui:SetCore("SendNotification", {
-        Title = title,
-        Text = "Welcome To "..title..""..game.Players.LocalPlayer.DisplayName.." AKA "..game.Players.LocalPlayer.Name.."!",
-        Duration = 5,
-        Logo = "rbxassetid://7072724538",
-    })
 
     local LunaLibrary = Instance.new("ScreenGui")
     local UIS = game:GetService("UserInputService")
@@ -256,10 +250,6 @@ function windows:Create(options)
         TS:Create(backFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
             Position = UDim2.new(UIClosed)
         }):Play()
-        game.StarterGui:SetCore("SendNotification", {
-            Title = title,
-            Text = "Press Left Alt to open back the GUI."
-        })
     end)
 
     local UIS = game:GetService("UserInputService")
