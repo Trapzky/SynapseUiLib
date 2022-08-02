@@ -1,6 +1,6 @@
 local windows =  {}
 
-local UIClosed = -0.4, 0,0.271, 0
+local UIClosed = -0.9, 0,0.271, 0
 local UIOpened = 0.0109783234, 0, 0.191451475, 0
 
 local Opened = true
