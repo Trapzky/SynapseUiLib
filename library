@@ -258,14 +258,14 @@ function windows:Create(options)
         }):Play()
         game.StarterGui:SetCore("SendNotification", {
             Title = title,
-            Text = "UI Has Been Closed, Press Left Alt On Your Keyboard To ReOpen The GUI."
+            Text = "Press Left Alt to open back the GUI."
         })
     end)
 
     local UIS = game:GetService("UserInputService")
 
     UIS.InputBegan:Connect(function(KeyCode)
-        if KeyCode.KeyCode == Enum.KeyCode.LeftAlt then
+        if KeyCode.KeyCode == Enum.KeyCode.LeftControl or KeyCode.KeyCode == Enum.KeyCode.RightControl then
             if Closed then
                 Closed = false
                 TS:Create(backFrame, TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
